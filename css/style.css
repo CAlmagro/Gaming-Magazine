@@ -16,6 +16,8 @@ img{
     vertical-align: middle;
 }
 
+
+/* menu */
 header{
     display: flex;
     justify-content:space-between;
@@ -27,24 +29,51 @@ header{
 header div{
     display: flex;
     justify-content: start;
+    align-items: center;
     padding: 1rem;
 }
 
-header div a{
-    display: flex;
-    align-content: center;
-}
 
-#menu{
-    background-color: rgb(157, 78, 173);
+#menu, #logo{
+    /* background-color: rgb(157, 78, 173); */
     display: flex;
-    justify-content: end;
-    align-content: center;
+    justify-content: space-between;
     flex-direction: row;
     padding: 1rem;
-    text-decoration: none;
-    list-style: none;
+
 }
+
+nav .menu-flex, #logo {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    align-items: center;
+
+}
+
+/* botones del menu */
+
+nav .menu-flex a, #logo a{
+    display: block;
+
+    background-color: rgb(157, 78, 173);
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    font-weight: bold;
+    color: antiquewhite;
+    text-decoration: none;
+    /* list-style: none; */
+    transition: 0.33s;
+}
+
+nav .menu-flex a:hover{
+    color: rgb(157, 78, 173);
+    background-color:antiquewhite
+}
+
+
 
 #btnCloseMenu, nav .menu-flex .fa-xmark{
     display: none;
@@ -66,19 +95,9 @@ nav .menu-flex .fa-xmark:hover{
     cursor: pointer;
 }
 
-nav .menu-flex a{
-    padding: 10px 20px;
-    font-weight: bold;
-    color: antiquewhite;
-    text-decoration: none;
-    list-style: none;
-    transition: 0.33s;
-}
 
-nav .menu-flex a:hover{
-    color: rgb(157, 78, 173);
-    background-color:antiquewhite
-}
+
+
 
 /*ANIMATIONS*/
 @keyframes animateTitle {
