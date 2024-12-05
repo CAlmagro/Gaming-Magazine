@@ -9,12 +9,12 @@
     scroll-behavior: smooth;
 }
 
-/* Hacemos todas las imágenes responsive */
+/* Hacemos todas las imágenes responsive
 img{
     width: 100%;
     height: auto;
     vertical-align: middle;
-}
+} */
 
 
 /* menu */
@@ -95,7 +95,24 @@ nav .menu-flex .fa-xmark:hover{
     cursor: pointer;
 }
 
+/* Main */
+ h1{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 35px;
+}
 
+.main_img {
+    padding: 20px;
+    width: 40%;
+}
+  
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
