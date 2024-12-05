@@ -42,6 +42,8 @@ header div a{
     align-content: center;
     flex-direction: row;
     padding: 1rem;
+    text-decoration: none;
+    list-style: none;
 }
 
 #btnCloseMenu, nav .menu-flex .fa-xmark{
@@ -69,6 +71,7 @@ nav .menu-flex a{
     font-weight: bold;
     color: antiquewhite;
     text-decoration: none;
+    list-style: none;
     transition: 0.33s;
 }
 
