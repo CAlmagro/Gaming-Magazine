@@ -8,10 +8,15 @@
 </head>
 <body>
     <header>
+        <div>
+                <a href="index.html">
+                   <button> GAME WORLD</button>
+                </a>
+        </div>
         <nav id="menu">
-            <ul>
-                <li>
-                    <a href="index.html">GAME WORLD</a>
+            <ul class="menu-flex">
+                <li id="btnCloseMenu">
+                    <i class="fa-solid fa-bars"></i>
                 </li>
                 <li>
                     <a href="news.html">Noticias</a>
@@ -23,33 +28,63 @@
                     <a href="contact.html">Contáctanos</a>
                 </li>
             </ul>
+            <div id="btnOpenMenu">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
         </nav>
     </header>
+
     <main>
         <h1></h1>
         <p></p>
+
+        <section class="contact-container">
+            <div>
+                <h1>Contáctanos</h1>
+            </div>
+            <form class="form"> 
+                <input name="name" type="text" class="form-input" placeholder="Nombre" />
+                <input name="email" type="text" class="form-input" placeholder="Email" />
+                <textarea name="text" class="form-input" placeholder="¡Escribenos aquí tu mensaje!"></textarea>
+                <input type="submit" value="Enviar" />
+            </form>
+        </section>
+
     </main>
+
     <footer>
         <div>
-            <p></p>
-            <button></button>
+            <p>Si tienes alguna pregunta, consulta o sugerencia, ¡no dudes en contactar con nosotros! Pincha en el botón de CONTACTO y rellena el formulario para hacernos llegar tu mensaje.</p>
+            <button>
+                <a href="contact.html"> Contacto </a>  
+            </button>
         </div>
         <div>
-            <p></p>
+            <p>Para más información, ¡Siguenos en nuestras Redes Sociales!</p>
             <ul>
                 <li>
-                    <i></i>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </li>
                 <li>
-                    <i></i>
+                    <a href="https://x.com/?lang=es" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
                 </li>
                 <li>
-                    <i></i>
+                    <a href="https://www.tiktok.com/es/" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
                 </li>
                 <li>
-                    <i></i>
+                    <a href="https://discord.com/" target="_blank">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
                 </li>
             </ul>
+
+            
         </div>
     </footer>
     <script src="js/script.js"></script>
