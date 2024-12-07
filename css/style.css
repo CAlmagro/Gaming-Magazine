@@ -1,5 +1,14 @@
 :root{
-    font-size: 16px;
+      /* Variables texto */
+      --h1: 35pt;
+      --h2: 25pt;
+      --textSize: 19pt;
+
+      /* variables color */
+      --color1:rgb(249, 244, 249);
+      --color2: rgb(72, 19, 73);
+      --color3:rgb(136, 166, 136);
+
 }
 
 *{
@@ -119,11 +128,9 @@ nav .menu-flex .fa-xmark:hover{
 
 .newsM-title{
     font-size: 35px;
-
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
 }
 
 
