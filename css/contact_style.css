@@ -1,0 +1,240 @@
+:root{
+    /* Variables texto */
+    --h1: 35pt;
+    --h2: 25pt;
+    --textSize: 19pt;
+
+    /* variables color */
+    --color1:rgb(249, 244, 249);
+    --color2: rgb(72, 19, 73);
+    --color3:rgb(136, 166, 136);
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Hacemos todas las imágenes responsive
+img{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+} */
+
+
+/* menu */
+header{
+  display: flex;
+  justify-content:space-between;
+  
+  padding: 1rem;
+  background-color: blue;
+}
+
+header div{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+#menu, #logo{
+  /* background-color: rgb(157, 78, 173); */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+
+}
+
+nav .menu-flex, #logo {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+  align-items: center;
+
+}
+
+/* botones del menu */
+
+nav .menu-flex a, #logo a{
+  display: block;
+
+  background-color: rgb(157, 78, 173);
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  font-weight: bold;
+  color: antiquewhite;
+  text-decoration: none;
+  /* list-style: none; */
+  transition: 0.33s;
+}
+
+nav .menu-flex a:hover{
+  color: rgb(157, 78, 173);
+  background-color:antiquewhite
+}
+
+
+
+#btnCloseMenu, nav .menu-flex .fa-xmark{
+  display: none;
+}
+
+#btnOpenMenu, nav .menu-flex .fa-xmark{
+  display: none;
+}
+
+#btnOpenMenu .fa-bars:hover{
+  color: rgb(235, 153, 31);
+}
+
+nav .menu-flex .fa-xmark:hover{
+  color: rgb(235, 153, 31);
+}
+
+#btnOpenMenu .fa-bars, nav .fa-xmark{
+  cursor: pointer;
+}
+
+/* Main */
+h1{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 35px;
+}
+
+.form-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+/* FORMULARIO */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20%;
+}
+
+.form
+{
+    max-width: 420px;
+    margin:20px 30px;
+}
+
+.form-input
+{
+    padding: 13px;
+
+    color: rgb(118, 48, 199);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    border-radius: 5px;
+    line-height: 22px;
+    /* background-color: transparent; */
+    border: 2px solid pink;
+    transition: all 0.3s;
+    
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.form-input:focus
+{
+    border: 2px solid rgb(194, 102, 194);
+}
+
+.form-input textarea
+{
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"]
+{
+    padding: 5px 10px;
+    background-color: var(--whiteColor);
+    color: var(--midPurpleColor);
+    border-radius: 20px;
+    border-color: var(--midPurpleColor);
+    border-width: 5px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Fredoka';
+    font-size: var(--textSize);
+    font-weight: 650;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+
+/* ----------- FOOTER -------------- */
+
+footer{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: white;
+    background-color: purple ;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footerText{
+    width: 80%;
+    padding-right: 410px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.footerText button{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   width: 50%;
+}
+
+
+.socialBtn 
+{
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 3vw;
+}
+
+.socialBtn a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
