@@ -1,0 +1,345 @@
+:root{
+    /* Variables texto */
+    --h1: 35pt;
+    --h2: 25pt;
+    --textSize: 19pt;
+
+    /* variables color */
+    --color1:rgb(249, 244, 249);
+    --color2: rgb(72, 19, 73);
+    --color3:rgb(136, 166, 136);
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* menu */
+header{
+    display: flex;
+    justify-content:space-between;
+    
+    padding: 1rem;
+    background-color: blue;
+}
+
+header div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+#menu, #logo{
+    /* background-color: rgb(157, 78, 173); */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+
+}
+
+nav .menu-flex, #logo {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    align-items: center;
+
+}
+
+/* botones del menu */
+
+nav .menu-flex a, #logo a{
+    display: block;
+
+    background-color: rgb(157, 78, 173);
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    font-weight: bold;
+    color: antiquewhite;
+    text-decoration: none;
+    /* list-style: none; */
+    transition: 0.33s;
+}
+
+nav .menu-flex a:hover{
+    color: rgb(157, 78, 173);
+    background-color:antiquewhite
+}
+
+
+
+#btnCloseMenu, nav .menu-flex .fa-xmark{
+    display: none;
+}
+
+#btnOpenMenu, nav .menu-flex .fa-xmark{
+    display: none;
+}
+
+#btnOpenMenu .fa-bars:hover{
+    color: rgb(235, 153, 31);
+}
+
+nav .menu-flex .fa-xmark:hover{
+    color: rgb(235, 153, 31);
+}
+
+#btnOpenMenu .fa-bars, nav .fa-xmark{
+    cursor: pointer;
+}
+
+/* Main */
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 35px;
+}
+
+/* guias mundo */
+.GI-guide-M {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.GI-guide-M h2{
+    padding: 2% 10%;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.GI-guide-M p{
+    padding: 0% 10%;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.GI-guide-M .mision-guide{
+    padding: 2% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.GI-guide-M .mision-guide ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.GI-guide-M .mision-guide ul li{
+    padding: 0% 10%;
+}
+
+.GI-guide-M .mision-guide a{
+    text-decoration: none;
+}
+
+
+/* guias builds */
+
+.GI-guide-B {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.GI-guide-B h2{
+    padding: 2% 10%;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.GI-guide-B p{
+    padding: 0% 10%;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+
+/* guias artefactos */
+
+.GI-guide-A {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.GI-guide-A h3{
+    padding: 2% 15%;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.GI-guide-A p{
+    padding: 0% 15%;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.GI-guide-A .artifacts{
+    padding: 2% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.GI-guide-A .artifacts ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.GI-guide-A .artifacts ul li{
+    padding: 0% 10%;
+}
+
+.GI-guide-A .artifacts a{
+    text-decoration: none;
+}
+
+/* guias equipos */
+
+.GI-guide-E {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.GI-guide-E h3{
+    padding: 2% 15%;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.GI-guide-E p{
+    padding: 0% 15%;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.GI-guide-E .teams{
+    padding: 2% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.GI-guide-E .teams ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 12px;
+    margin-right: 35px;
+}
+
+.GI-guide-E .teams ul li{
+    height: 10vh;
+    position: relative;
+}
+.GI-guide-E .teams img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+
+
+.GI-guide-E .teams a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* footer */
+footer{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: white;
+    background-color: purple ;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footerText{
+    width: 80%;
+    padding-right: 410px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.footerText button{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   width: 50%;
+}
+
+
+.socialBtn 
+{
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 3vw;
+}
+
+.socialBtn a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
