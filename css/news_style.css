@@ -1,12 +1,150 @@
-* {
-    box-sizing: border-box;
-    font-family: "Courier New", Courier, monospace;
+:root{
+    /* Variables texto */
+    --h1: 35pt;
+    --h2: 25pt;
+    --textSize: 19pt;
+
+    /* variables color */
+    --color1:rgb(249, 244, 249);
+    --color2: rgb(72, 19, 73);
+    --color3:rgb(136, 166, 136);
+
 }
 
-body {
-    color: aliceblue;
-    background-color: #221831;
+* {
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+    box-sizing: border-box;
+    /* font-family: "Courier New", Courier, monospace; */
 }
+
+
+/* menu */
+header{
+  display: flex;
+  justify-content:space-between;
+  
+  padding: 1rem;
+  background-color: blue;
+}
+
+header div{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+#menu, #logo{
+  /* background-color: rgb(157, 78, 173); */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+
+}
+
+nav .menu-flex, #logo {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+  align-items: center;
+
+}
+
+/* botones del menu */
+
+nav .menu-flex a, #logo a{
+  display: block;
+
+  background-color: rgb(157, 78, 173);
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  font-weight: bold;
+  color: antiquewhite;
+  text-decoration: none;
+  /* list-style: none; */
+  transition: 0.33s;
+}
+
+nav .menu-flex a:hover{
+  color: rgb(157, 78, 173);
+  background-color:antiquewhite
+}
+
+#btnCloseMenu, nav .menu-flex .fa-xmark{
+  display: none;
+}
+
+#btnOpenMenu, nav .menu-flex .fa-xmark{
+  display: none;
+}
+
+#btnOpenMenu .fa-bars:hover{
+  color: rgb(235, 153, 31);
+}
+
+nav .menu-flex .fa-xmark:hover{
+  color: rgb(235, 153, 31);
+}
+
+#btnOpenMenu .fa-bars, nav .fa-xmark{
+  cursor: pointer;
+}
+
+/* Main */
+h1{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 35px;
+
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.new-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5% 10%;
+}
+
+.new-1 h2, .new-2 h2{
+    padding-bottom: 2%;
+}
+
+.new-1T p{
+    padding-right: 3%;
+    text-align: left;
+}
+
+.new-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 5% 10%;
+}
+
+.new-2 .new-2T{
+    padding: 3% 3%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    flex-direction: column;
+    text-align: end;
+}
+
+
+
 
 img {
     width: 100%;
@@ -22,7 +160,7 @@ img {
     margin-top: 4em;
 }
 
-/* Hide the images by default */
+/* esconde las imagenes */
 .mySlides {
     display: none;
 }
@@ -35,7 +173,7 @@ img {
     display: none;
 }
 
-/* Next & previous buttons */
+/* botones: siguiente y previa*/
 .prev,
 .next {
     cursor: pointer;
@@ -52,7 +190,7 @@ img {
     user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* posicion botones*/
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -115,3 +253,57 @@ img {
         opacity: 1;
     }
 }
+
+
+/* ----------- FOOTER -------------- */
+
+footer{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: white;
+    background-color: purple ;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footerText{
+    width: 80%;
+    padding-right: 410px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.footerText button{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   width: 50%;
+}
+
+
+.socialBtn 
+{
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 3vw;
+}
+
+.socialBtn a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
