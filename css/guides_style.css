@@ -100,7 +100,7 @@ nav .menu-flex .fa-xmark:hover{
 h1{
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 5% 0%;
     font-size: 35px;
 }
 
@@ -122,7 +122,8 @@ h1{
 }
 
 .GI-guide-M p{
-    padding: 0% 10%;
+    padding-left: 10%;
+    padding-bottom: 2%;
     display: flex;
     justify-self: flex-start;
     align-self: flex-start;
@@ -144,11 +145,23 @@ h1{
 }
 
 .GI-guide-M .mision-guide ul li{
-    padding: 0% 10%;
+    padding: 0% 20%;
+    /* background-color: aqua; */
 }
 
+
 .GI-guide-M .mision-guide a{
-    text-decoration: none;
+   text-decoration: none;
+   display: block;
+
+   background-color: rgb(157, 78, 173);
+   padding: 20px 30px;
+   border-radius: 20px;
+
+   font-weight: bold;
+   color: antiquewhite;
+   text-decoration: none;
+    
 }
 
 
@@ -216,10 +229,22 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 12px;
+    margin-right: 35px;
 }
 
 .GI-guide-A .artifacts ul li{
-    padding: 0% 10%;
+    height: 10vh;
+    position: relative;
+}
+
+.GI-guide-A .artifacts img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
 }
 
 .GI-guide-A .artifacts a{
