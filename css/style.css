@@ -11,6 +11,17 @@
 
 }
 
+@font-face{
+    font-family: Dongle-Bold;
+    src: url(../media/Fonts/Dongle-Bold.ttf); 
+}
+
+@font-face{
+    font-family: Nunito;
+    src: url(../media/Fonts/Nunito.ttf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -25,14 +36,13 @@ img{
     vertical-align: middle;
 } */
 
-
 /* menu */
 header{
     display: flex;
     justify-content:space-between;
     
     padding: 1rem;
-    background-color: blue;
+    background-color: #041063;
 }
 
 header div{
@@ -40,6 +50,10 @@ header div{
     justify-content: start;
     align-items: center;
     padding: 1rem;
+}
+
+p{
+    font-family: Nunito;
 }
 
 
@@ -66,20 +80,22 @@ nav .menu-flex, #logo {
 nav .menu-flex a, #logo a{
     display: block;
 
-    background-color: rgb(157, 78, 173);
+    background-color: #ae9df5;
     padding: 10px 20px;
     border-radius: 20px;
 
     font-weight: bold;
-    color: antiquewhite;
+    font-family: Dongle-Bold;
+    font-size: 25px;
+    color: white;
     text-decoration: none;
     /* list-style: none; */
     transition: 0.33s;
 }
 
 nav .menu-flex a:hover{
-    color: rgb(157, 78, 173);
-    background-color:antiquewhite
+    color: #ae9df5;
+    background-color:white;
 }
 
 
@@ -109,7 +125,15 @@ nav .menu-flex .fa-xmark:hover{
     display: flex;
     justify-content: center;
     padding: 1rem;
-    font-size: 35px;
+    font-size: 100px;
+    font-family: Dongle-Bold;
+    color:#f094e0;
+}
+
+h3{
+    font-family: Dongle-Bold;
+    font-size: 25px;
+    color: #74bbef;
 }
 
 .main_img {
@@ -127,7 +151,9 @@ nav .menu-flex .fa-xmark:hover{
 /* Sección Ultimas Noticias del Main */
 
 .newsM-title{
-    font-size: 35px;
+    font-size: 70px;
+    font-family: Dongle-Bold;
+    color:#f094e0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -154,6 +180,33 @@ nav .menu-flex .fa-xmark:hover{
     align-items: center;    
 }
 
+.news-main #card button{
+    background-color: #bddcfd;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.news-main #card button:hover{
+    background-color:#74bbef;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.news-main #card button a{
+    font-family: Dongle-Bold;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
 .news-main #card div{
    padding: 10px 0px 30px 0px;  
 }
@@ -176,7 +229,7 @@ footer{
     padding-top: 10vh;
     padding-bottom: 10vh;
     color: white;
-    background-color: purple ;
+    background-color: #041063;
     bottom: 0;
 
     display: flex;
@@ -198,7 +251,16 @@ footer{
    justify-content: center;
    align-items:center;
    width: 50%;
+   font-family: Dongle-Bold;
+   font-size: 30px;
+   
 }
+
+.footerText button a{
+    color:#f094e0;
+
+}
+
 
 
 .socialBtn 
@@ -246,7 +308,7 @@ footer{
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        background-color:rebeccapurple;
+        background-color:#041063;
 
         position: fixed;
         width: 100%;
