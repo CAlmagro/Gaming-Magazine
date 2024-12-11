@@ -1,15 +1,32 @@
 :root{
-    /* Variables texto */
-    --h1: 35pt;
-    --h2: 25pt;
+    /* Variables texto  */
+    --title: 100pt;
+    --subtitle: 25pt;
     --textSize: 19pt;
 
-    /* variables color */
-    --color1:rgb(249, 244, 249);
-    --color2: rgb(72, 19, 73);
-    --color3:rgb(136, 166, 136);
+    /* Variables color */
+    --color1: white;
+    --color2: #f7e9fc;
+    --color3: #f094e0;
+    --color4: #5f4aaa;
+    --color5: #ae9df5;
+    --color6: #74bbef;
+    --color7: #bddcfd;
+    --color8: #4964dd;
+    --color9: #d9adeb;
 
 }
+
+@font-face{
+  font-family: Dongle-Bold;
+  src: url(../media/Fonts/Dongle-Bold.ttf); 
+}
+
+@font-face{
+  font-family: Nunito;
+  src: url(../media/Fonts/Nunito.ttf);
+}
+
 
 *{
   margin: 0;
@@ -18,13 +35,17 @@
   scroll-behavior: smooth;
 }
 
+
 /* menu */
 header{
     display: flex;
     justify-content:space-between;
     
     padding: 1rem;
-    background-color: blue;
+    background: radial-gradient(circle at top right,transparent 10%,#a28dec 10%, #a28dec 20%, transparent 21%), radial-gradient(circle at left bottom,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%),radial-gradient(circle at top left,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%), radial-gradient(circle at right bottom,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%), radial-gradient(circle at center,#a28dec 30%, transparent 31%);
+    background-size: 2em 2em;
+    background-color: var(--color9);
+    opacity: 1
 }
 
 header div{
@@ -34,14 +55,15 @@ header div{
     padding: 1rem;
 }
 
+p{
+    font-family: Nunito;
+}
 
 #menu, #logo{
-    /* background-color: rgb(157, 78, 173); */
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding: 1rem;
-
 }
 
 nav .menu-flex, #logo {
@@ -50,7 +72,6 @@ nav .menu-flex, #logo {
     justify-content: space-between;
     gap: 3vw;
     align-items: center;
-
 }
 
 /* botones del menu */
@@ -58,23 +79,28 @@ nav .menu-flex, #logo {
 nav .menu-flex a, #logo a{
     display: block;
 
-    background-color: rgb(157, 78, 173);
+    background-color: var(--color2);
     padding: 10px 20px;
     border-radius: 20px;
+    border: 5px solid var(--color4);
 
     font-weight: bold;
-    color: antiquewhite;
+    font-family: Dongle-Bold;
+    font-size: 25px;
+    color: var(--color4);
     text-decoration: none;
-    /* list-style: none; */
     transition: 0.33s;
 }
 
 nav .menu-flex a:hover{
-    color: rgb(157, 78, 173);
-    background-color:antiquewhite
+    color: var(--color5);
+    background-color: var(--color1);
 }
 
-
+#logo a:hover{
+    color: var(--color3);
+    background-color: var(--color1);
+}
 
 #btnCloseMenu, nav .menu-flex .fa-xmark{
     display: none;
@@ -85,11 +111,11 @@ nav .menu-flex a:hover{
 }
 
 #btnOpenMenu .fa-bars:hover{
-    color: rgb(235, 153, 31);
+    color: var(--color3);
 }
 
 nav .menu-flex .fa-xmark:hover{
-    color: rgb(235, 153, 31);
+    color: var(--color3);
 }
 
 #btnOpenMenu .fa-bars, nav .fa-xmark{
@@ -97,12 +123,42 @@ nav .menu-flex .fa-xmark:hover{
 }
 
 /* Main */
+.divisor{
+    background-color: var(--color4);
+    color: var(--color2);
+    font-family: Dongle-Bold;
+    font-size: var(--subtitle);
+    display: flex;
+    justify-content: center;
+}
+
 h1{
     display: flex;
     justify-content: center;
-    padding: 5% 0%;
-    font-size: 35px;
+    padding: 1rem;
+    font-size: var(--title);
+    font-family: Dongle-Bold;
+    color: var(--color3);
 }
+
+h2{
+    font-family: Dongle-Bold;
+    font-size: var(--subtitle);
+    color: var(--color6);
+    text-align: left;
+}
+
+h3{
+    font-family: Dongle-Bold;
+    font-size: var(--subtitle);
+    color: var(--color7);
+    text-align: left;
+}
+
+p{
+    font-family: Nunito;
+}
+
 
 /* guias mundo */
 .GI-guide-M {
@@ -110,8 +166,8 @@ h1{
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .GI-guide-M h2{
@@ -146,22 +202,27 @@ h1{
 
 .GI-guide-M .mision-guide ul li{
     padding: 0% 20%;
-    /* background-color: aqua; */
 }
 
 
 .GI-guide-M .mision-guide a{
-   text-decoration: none;
-   display: block;
+    display: block;
 
-   background-color: rgb(157, 78, 173);
-   padding: 20px 30px;
-   border-radius: 20px;
+    background-color: var(--color7);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 5px solid var(--color8);
 
-   font-weight: bold;
-   color: antiquewhite;
-   text-decoration: none;
-    
+    font-weight: bold;
+    font-family: Dongle-Bold;
+    font-size: 25px;
+    color: var(--color1);
+    text-decoration: none;
+    transition: 0.33s; 
+}
+
+.GI-guide-M .mision-guide a:hover{
+    background-color: var(--color6);
 }
 
 
@@ -172,8 +233,8 @@ h1{
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .GI-guide-B h2{
@@ -198,8 +259,8 @@ h1{
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .GI-guide-A h3{
@@ -258,8 +319,8 @@ h1{
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .GI-guide-E h3{
@@ -317,18 +378,18 @@ h1{
 
 
 
-/* footer */
+/* Footer */
+
 footer{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    color: white;
-    background-color: purple ;
+    color: var(--color1);
+    background-color: var(--color9);
     bottom: 0;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .footerText{
@@ -344,8 +405,31 @@ footer{
    justify-content: center;
    align-items:center;
    width: 50%;
+   font-family: Dongle-Bold;
+   font-size: 30px;
+   border-radius: 20px;
+   border-color: var(--color4);
+   border-style: solid;
+   border-width: 5px;
+   background-color: var(--color2);
+   transition: 0.33s;
 }
 
+.footerText button:hover{
+    background-color: var(--color1);
+
+}
+
+.footerText button a{
+    color: var(--color3);
+    text-decoration: none;
+    transition: 0.33s;
+}
+
+.footerText button a:hover{
+    color: var(--color2);
+    border-color: var(--color4);
+}
 
 .socialBtn 
 {
@@ -359,8 +443,8 @@ footer{
 .socialBtn a
 {
     text-decoration: none;
-    color: white;
-    font-size: 24px;
+    color: var(--color1);
+    font-size: var(--subtitle);
     width: 50px;
     height: 50px;
     display: flex;
@@ -368,3 +452,7 @@ footer{
     justify-content: center;
 }
 
+.socialBtn a:hover
+{
+    color: var(--color2);
+}

@@ -1,15 +1,32 @@
 :root{
-    /* Variables texto */
-    --h1: 35pt;
-    --h2: 25pt;
-    --textSize: 19pt;
+  /* Variables texto  */
+  --title: 100pt;
+  --subtitle: 25pt;
+  --textSize: 19pt;
 
-    /* variables color */
-    --color1:rgb(249, 244, 249);
-    --color2: rgb(72, 19, 73);
-    --color3:rgb(136, 166, 136);
+  /* Variables color */
+  --color1: white;
+  --color2: #f7e9fc;
+  --color3: #f094e0;
+  --color4: #5f4aaa;
+  --color5: #ae9df5;
+  --color6: #74bbef;
+  --color7: #bddcfd;
+  --color8: #4964dd;
+  --color9: #d9adeb;
 
 }
+
+@font-face{
+font-family: Dongle-Bold;
+src: url(../media/Fonts/Dongle-Bold.ttf); 
+}
+
+@font-face{
+font-family: Nunito;
+src: url(../media/Fonts/Nunito.ttf);
+}
+
 
 *{
   margin: 0;
@@ -18,14 +35,16 @@
   scroll-behavior: smooth;
 }
 
-
 /* menu */
 header{
   display: flex;
   justify-content:space-between;
   
   padding: 1rem;
-  background-color: blue;
+  background: radial-gradient(circle at top right,transparent 10%,#a28dec 10%, #a28dec 20%, transparent 21%), radial-gradient(circle at left bottom,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%),radial-gradient(circle at top left,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%), radial-gradient(circle at right bottom,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%), radial-gradient(circle at center,#a28dec 30%, transparent 31%);
+  background-size: 2em 2em;
+  background-color: var(--color9);
+  opacity: 1
 }
 
 header div{
@@ -35,14 +54,15 @@ header div{
   padding: 1rem;
 }
 
+p{
+  font-family: Nunito;
+}
 
 #menu, #logo{
-  /* background-color: rgb(157, 78, 173); */
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   padding: 1rem;
-
 }
 
 nav .menu-flex, #logo {
@@ -51,7 +71,6 @@ nav .menu-flex, #logo {
   justify-content: space-between;
   gap: 3vw;
   align-items: center;
-
 }
 
 /* botones del menu */
@@ -59,23 +78,28 @@ nav .menu-flex, #logo {
 nav .menu-flex a, #logo a{
   display: block;
 
-  background-color: rgb(157, 78, 173);
+  background-color: var(--color2);
   padding: 10px 20px;
   border-radius: 20px;
-
+  border: 5px solid var(--color4);
+  
   font-weight: bold;
-  color: antiquewhite;
+  font-family: Dongle-Bold;
+  font-size: 25px;
+  color: var(--color4);
   text-decoration: none;
-  /* list-style: none; */
   transition: 0.33s;
 }
 
 nav .menu-flex a:hover{
-  color: rgb(157, 78, 173);
-  background-color:antiquewhite
+  color: var(--color5);
+  background-color: var(--color1);
 }
 
-
+#logo a:hover{
+  color: var(--color3);
+  background-color: var(--color1);
+}
 
 #btnCloseMenu, nav .menu-flex .fa-xmark{
   display: none;
@@ -86,11 +110,11 @@ nav .menu-flex a:hover{
 }
 
 #btnOpenMenu .fa-bars:hover{
-  color: rgb(235, 153, 31);
+  color: var(--color3);
 }
 
 nav .menu-flex .fa-xmark:hover{
-  color: rgb(235, 153, 31);
+  color: var(--color3);
 }
 
 #btnOpenMenu .fa-bars, nav .fa-xmark{
@@ -98,11 +122,33 @@ nav .menu-flex .fa-xmark:hover{
 }
 
 /* Main */
+.divisor{
+  background-color: var(--color4);
+  color: var(--color2);
+  font-family: Dongle-Bold;
+  font-size: var(--subtitle);
+  display: flex;
+  justify-content: center;
+}
+
 h1{
   display: flex;
   justify-content: center;
   padding: 1rem;
-  font-size: 35px;
+  font-size: var(--title);
+  font-family: Dongle-Bold;
+  color: var(--color3);
+}
+
+h3{
+  font-family: Dongle-Bold;
+  font-size: var(--subtitle);
+  color: var(--color6);
+  text-align: center;
+}
+
+p{
+  font-family: Nunito;
 }
 
 .form-text{
@@ -131,15 +177,15 @@ h1{
 {
     padding: 13px;
 
-    color: rgb(118, 48, 199);
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color4);
+    font-family: Nunito;
     font-weight: 500;
     font-size: 18px;
 
     border-radius: 5px;
     line-height: 22px;
     /* background-color: transparent; */
-    border: 2px solid pink;
+    border: 5px solid var(--color7);
     transition: all 0.3s;
     
     margin-bottom: 15px;
@@ -150,7 +196,7 @@ h1{
 
 .form-input:focus
 {
-    border: 2px solid rgb(194, 102, 194);
+    border:  5px solid var(--color7);
 }
 
 .form-input textarea
@@ -162,72 +208,105 @@ h1{
 
 [type="submit"]
 {
-    padding: 5px 10px;
-    background-color: var(--whiteColor);
-    color: var(--midPurpleColor);
-    border-radius: 20px;
-    border-color: var(--midPurpleColor);
-    border-width: 5px;
     text-decoration: none;
     display: block;
-    font-family: 'Fredoka';
-    font-size: var(--textSize);
-    font-weight: 650;
-    width: 100%;
+    font-family: Dongle-Bold;
+    font-size: var(--subtitle);
     cursor: pointer;
-    transition: all 0.4s;
+
+    background-color: var(--color7);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 5px solid var(--color8);
+    color: var(--color1);
+    text-decoration: none;
+    transition: 0.33s;
+
+    width: 100%;
+}
+
+[type="submit"]:hover{
+  background-color: var(--color6);
+
 }
 
 
 
-/* ----------- FOOTER -------------- */
+/* Footer */
 
 footer{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    color: white;
-    background-color: purple ;
-    bottom: 0;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  color: var(--color1);
+  background-color: var(--color9);
+  bottom: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;   
 }
 
 .footerText{
-    width: 80%;
-    padding-right: 410px;
-    padding-left: 40px;
-    display: flex;
-    flex-wrap: wrap;  
+  width: 80%;
+  padding-right: 410px;
+  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;  
 }
 
 .footerText button{
-   display: flex;
-   justify-content: center;
-   align-items:center;
-   width: 50%;
+ display: flex;
+ justify-content: center;
+ align-items:center;
+ width: 50%;
+ font-family: Dongle-Bold;
+ font-size: 30px;
+ border-radius: 20px;
+ border-color: var(--color4);
+ border-style: solid;
+ border-width: 5px;
+ background-color: var(--color2);
+ transition: 0.33s;
 }
 
+.footerText button:hover{
+  background-color: var(--color1);
+
+}
+
+.footerText button a{
+  color: var(--color3);
+  text-decoration: none;
+  transition: 0.33s;
+}
+
+.footerText button a:hover{
+  color: var(--color2);
+  border-color: var(--color4);
+}
 
 .socialBtn 
 {
-    padding-right: 100px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 3vw;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 3vw;
 }
 
 .socialBtn a
 {
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  text-decoration: none;
+  color: var(--color1);
+  font-size: var(--subtitle);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialBtn a:hover
+{
+  color: var(--color2);
 }
