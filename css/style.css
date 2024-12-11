@@ -1,15 +1,21 @@
-/* :root{
-      Variables texto 
-      --h1: 35pt;
-      --h2: 25pt;
+:root{
+      /* Variables texto  */
+      --title: 100pt;
+      --subtitle: 25pt;
       --textSize: 19pt;
 
-      variables color
-      --color1:rgb(249, 244, 249);
-      --color2: rgb(72, 19, 73);
-      --color3:rgb(136, 166, 136);
+      /* Variables color */
+      --color1: white;
+      --color2: #f7e9fc;
+      --color3: #f094e0;
+      --color4: #5f4aaa;
+      --color5: #ae9df5;
+      --color6: #74bbef;
+      --color7: #bddcfd;
+      --color8: #4964dd;
+      --color9: #d9adeb;
 
-} */
+}
 
 @font-face{
     font-family: Dongle-Bold;
@@ -29,13 +35,6 @@
     scroll-behavior: smooth;
 }
 
-/* Hacemos todas las imágenes responsive
-img{
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-} */
-
 /* menu */
 header{
     display: flex;
@@ -44,7 +43,7 @@ header{
     padding: 1rem;
     background: radial-gradient(circle at top right,transparent 10%,#a28dec 10%, #a28dec 20%, transparent 21%), radial-gradient(circle at left bottom,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%),radial-gradient(circle at top left,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%), radial-gradient(circle at right bottom,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%), radial-gradient(circle at center,#a28dec 30%, transparent 31%);
     background-size: 2em 2em;
-    background-color: #E5C7EE ;
+    background-color: var(--color9);
     opacity: 1
 }
 
@@ -79,27 +78,27 @@ nav .menu-flex, #logo {
 nav .menu-flex a, #logo a{
     display: block;
 
-    background-color: #f7e9fc;
+    background-color: var(--color2);
     padding: 10px 20px;
     border-radius: 20px;
-    border: 5px solid #5f4aaa;
+    border: 5px solid var(--color4);
 
     font-weight: bold;
     font-family: Dongle-Bold;
     font-size: 25px;
-    color:#5f4aaa;
+    color: var(--color4);
     text-decoration: none;
     transition: 0.33s;
 }
 
 nav .menu-flex a:hover{
-    color: #ae9df5;
-    background-color:white;
+    color: var(--color5);
+    background-color: var(--color1);
 }
 
 #logo a:hover{
-    color:#f094e0;
-    background-color:white;
+    color: var(--color3);
+    background-color: var(--color1);
 }
 
 #btnCloseMenu, nav .menu-flex .fa-xmark{
@@ -111,11 +110,11 @@ nav .menu-flex a:hover{
 }
 
 #btnOpenMenu .fa-bars:hover{
-    color:#f094e0;
+    color: var(--color3);
 }
 
 nav .menu-flex .fa-xmark:hover{
-    color:#f094e0;
+    color: var(--color3);
 }
 
 #btnOpenMenu .fa-bars, nav .fa-xmark{
@@ -127,15 +126,15 @@ nav .menu-flex .fa-xmark:hover{
     display: flex;
     justify-content: center;
     padding: 1rem;
-    font-size: 100px;
+    font-size: var(--title);
     font-family: Dongle-Bold;
-    color:#f094e0;
+    color: var(--color3);
 }
 
 h3{
     font-family: Dongle-Bold;
-    font-size: 25px;
-    color: #74bbef;
+    font-size: var(--subtitle);
+    color: var(--color6);
     text-align: center;
 }
 
@@ -156,7 +155,7 @@ h3{
 .newsM-title{
     font-size: 70px;
     font-family: Dongle-Bold;
-    color:#f094e0;
+    color: var(--color3);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -183,13 +182,13 @@ h3{
     justify-content: center;
     justify-items: space-around;
     align-items: center;    
-    border: 5px solid #5f4aaa;
+    border: 5px solid var(--color4);
     border-radius: 20px;
 }
 
 .news-main #card #btnIraver{
-    background-color: #bddcfd;
-    border-color:#4964dd;
+    background-color: var(--color7);
+    border-color: var(--color8);
     border-width: 5px;
     border-radius: 20px;
     border-style: solid;
@@ -197,16 +196,17 @@ h3{
     display: flex;
     justify-content: center;
     padding: 5px 20px;
+    transition: 0.33s;
 }
 
 .news-main #card #btnIraver:hover{
-    background-color:#74bbef;
+    background-color: var(--color6);
 }
 
 .news-main #card #btnIraver a{
     font-family: Dongle-Bold;
     font-size: 25px;
-    color: white;
+    color: var(--color1);
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -218,7 +218,7 @@ h3{
 
 .news-main #card #btnContainer{
     padding: 0px 0px 20px 0px;  
- }
+}
 
 
 .news-main #card img{
@@ -240,10 +240,10 @@ h3{
 }
 
 .divisor{
-    background-color: #5f4aaa;
-    color:#f7e9fc;
+    background-color: var(--color4);
+    color: var(--color2);
     font-family: Dongle-Bold;
-    font-size: 25px;
+    font-size: var(--subtitle);
     display: flex;
     justify-content: center;
 }
@@ -253,8 +253,8 @@ h3{
 footer{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    color: white;
-    background-color:#e5c7ee;
+    color: var(--color1);
+    background-color: var(--color9);
     bottom: 0;
 
     display: flex;
@@ -278,26 +278,28 @@ footer{
    font-family: Dongle-Bold;
    font-size: 30px;
    border-radius: 20px;
-   border-color:#5f4aaa;
+   border-color: var(--color4);
    border-style: solid;
    border-width: 5px;
-   background-color: #f7e9fc;
+   background-color: var(--color2);
+   transition: 0.33s;
 }
 
 .footerText button:hover{
-    background-color: white;
+    background-color: var(--color1);
 
 }
 
 .footerText button a{
-    color:#f094e0;
+    color: var(--color3);
     text-decoration: none;
+    transition: 0.33s;
 }
 
 .footerText button a:hover{
-    color:#e5c7ee;
-    border-color:#5f4aaa;
- }
+    color: var(--color2);
+    border-color: var(--color4);
+}
 
 .socialBtn 
 {
@@ -311,8 +313,8 @@ footer{
 .socialBtn a
 {
     text-decoration: none;
-    color: white;
-    font-size: 24px;
+    color: var(--color1);
+    font-size: var(--subtitle);
     width: 50px;
     height: 50px;
     display: flex;
@@ -322,22 +324,9 @@ footer{
 
 .socialBtn a:hover
 {
-    color:#f7e9fc;
+    color: var(--color2);
 }
 
-
-
-/*ANIMATIONS*/
-@keyframes animateTitle {
-    from{
-        /* color: rgb(157, 78, 173); */
-    }
-
-    to{
-        /* font-size: 10vw; */
-        /* color:antiquewhite; */
-    }
-}
 
 /*MEDIA QUERY*/
 @media screen and (max-width: 576px) {
