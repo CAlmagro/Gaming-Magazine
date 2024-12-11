@@ -1,112 +1,151 @@
 :root{
-    /* Variables texto */
-    --h1: 35pt;
-    --h2: 25pt;
+    /* Variables texto  */
+    --title: 100pt;
+    --subtitle: 25pt;
     --textSize: 19pt;
 
-    /* variables color */
-    --color1:rgb(249, 244, 249);
-    --color2: rgb(72, 19, 73);
-    --color3:rgb(136, 166, 136);
+    /* Variables color */
+    --color1: white;
+    --color2: #f7e9fc;
+    --color3: #f094e0;
+    --color4: #5f4aaa;
+    --color5: #ae9df5;
+    --color6: #74bbef;
+    --color7: #bddcfd;
+    --color8: #4964dd;
+    --color9: #d9adeb;
 
 }
 
-* {
-    margin: 0;
+@font-face{
+  font-family: Dongle-Bold;
+  src: url(../media/Fonts/Dongle-Bold.ttf); 
+}
+
+@font-face{
+  font-family: Nunito;
+  src: url(../media/Fonts/Nunito.ttf);
+}
+
+
+*{
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
-    box-sizing: border-box;
-    /* font-family: "Courier New", Courier, monospace; */
 }
 
 
 /* menu */
 header{
-  display: flex;
-  justify-content:space-between;
-  
-  padding: 1rem;
-  background-color: blue;
+    display: flex;
+    justify-content:space-between;
+    
+    padding: 1rem;
+    background: radial-gradient(circle at top right,transparent 10%,#a28dec 10%, #a28dec 20%, transparent 21%), radial-gradient(circle at left bottom,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%),radial-gradient(circle at top left,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%), radial-gradient(circle at right bottom,transparent 10%,#a28dec 10%,#a28dec 20%, transparent 21%), radial-gradient(circle at center,#a28dec 30%, transparent 31%);
+    background-size: 2em 2em;
+    background-color: var(--color9);
+    opacity: 1
 }
 
 header div{
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
 }
 
+p{
+    font-family: Nunito;
+}
 
 #menu, #logo{
-  /* background-color: rgb(157, 78, 173); */
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding: 1rem;
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
 }
 
 nav .menu-flex, #logo {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 3vw;
-  align-items: center;
-
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    align-items: center;
 }
 
 /* botones del menu */
 
 nav .menu-flex a, #logo a{
-  display: block;
+    display: block;
 
-  background-color: rgb(157, 78, 173);
-  padding: 10px 20px;
-  border-radius: 20px;
+    background-color: var(--color2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 5px solid var(--color4);
 
-  font-weight: bold;
-  color: antiquewhite;
-  text-decoration: none;
-  /* list-style: none; */
-  transition: 0.33s;
+    font-weight: bold;
+    font-family: Dongle-Bold;
+    font-size: 25px;
+    color: var(--color4);
+    text-decoration: none;
+    transition: 0.33s;
 }
 
 nav .menu-flex a:hover{
-  color: rgb(157, 78, 173);
-  background-color:antiquewhite
+    color: var(--color5);
+    background-color: var(--color1);
+}
+
+#logo a:hover{
+    color: var(--color3);
+    background-color: var(--color1);
 }
 
 #btnCloseMenu, nav .menu-flex .fa-xmark{
-  display: none;
+    display: none;
 }
 
 #btnOpenMenu, nav .menu-flex .fa-xmark{
-  display: none;
+    display: none;
 }
 
 #btnOpenMenu .fa-bars:hover{
-  color: rgb(235, 153, 31);
+    color: var(--color3);
 }
 
 nav .menu-flex .fa-xmark:hover{
-  color: rgb(235, 153, 31);
+    color: var(--color3);
 }
 
 #btnOpenMenu .fa-bars, nav .fa-xmark{
-  cursor: pointer;
+    cursor: pointer;
 }
 
 /* Main */
-h1{
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  font-size: 35px;
+.divisor{
+    background-color: var(--color4);
+    color: var(--color2);
+    font-family: Dongle-Bold;
+    font-size: var(--subtitle);
+    display: flex;
+    justify-content: center;
+}
 
-  padding-top: 5%;
-  padding-bottom: 2%;
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: var(--title);
+    font-family: Dongle-Bold;
+    color: var(--color3);
+}
+
+h2{
+    font-family: Dongle-Bold;
+    font-size: var(--subtitle);
+    color: var(--color6);
+    text-align: left;
 }
 
 .new-1{
@@ -116,7 +155,7 @@ h1{
     padding: 5% 10%;
 }
 
-.new-1 h2, .new-2 h2{
+.new-1 h2, .new-2 h2, .new-3 h2{
     padding-bottom: 2%;
 }
 
@@ -143,13 +182,24 @@ h1{
     text-align: end;
 }
 
+.new-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5% 10%;
+}
 
+.new-1T p{
+    padding-right: 3%;
+    text-align: left;
+}
 
 
 img {
     width: 100%;
     height: auto;
     vertical-align: middle;
+    border-radius: 20px;
 }
 
 /* Slideshow container */
@@ -157,10 +207,10 @@ img {
     max-width: 720px;
     position: relative;
     margin: auto;
-    margin-top: 4em;
+    margin-top: 1em;
 }
 
-/* esconde las imagenes */
+/* Esconde las imagenes */
 .mySlides {
     display: none;
 }
@@ -173,7 +223,7 @@ img {
     display: none;
 }
 
-/* botones: siguiente y previa*/
+/* Botones: siguiente y previa*/
 .prev,
 .next {
     cursor: pointer;
@@ -182,9 +232,9 @@ img {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: var(--color1);
     font-weight: bold;
-    font-size: 18px;
+    font-size: var(--subtitle);
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -199,13 +249,14 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--color4);
 }
 
 /* Caption text */
 .text {
-    color: #f2f2f2;
-    font-size: 15px;
+    color: var(--color2);
+    font-size: var(--subtitle);
+    font-family: Dongle-Bold;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -215,8 +266,9 @@ img {
 
 /* Number text (1/3 etc) */
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
+    color: var(--color2);
+    font-size: var(--subtitle);
+    font-family: Dongle-Bold;
     padding: 8px 12px;
     position: absolute;
     top: 0;
@@ -228,7 +280,7 @@ img {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: var(--color5);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -236,7 +288,7 @@ img {
 
 .active,
 .dot:hover {
-    background-color: #717171;
+    background-color: var(--color4);
 }
 
 /* Fading animation */
@@ -255,19 +307,18 @@ img {
 }
 
 
-/* ----------- FOOTER -------------- */
+/* Footer */
 
 footer{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    color: white;
-    background-color: purple ;
+    color: var(--color1);
+    background-color: var(--color9);
     bottom: 0;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .footerText{
@@ -283,8 +334,31 @@ footer{
    justify-content: center;
    align-items:center;
    width: 50%;
+   font-family: Dongle-Bold;
+   font-size: 30px;
+   border-radius: 20px;
+   border-color: var(--color4);
+   border-style: solid;
+   border-width: 5px;
+   background-color: var(--color2);
+   transition: 0.33s;
 }
 
+.footerText button:hover{
+    background-color: var(--color1);
+
+}
+
+.footerText button a{
+    color: var(--color3);
+    text-decoration: none;
+    transition: 0.33s;
+}
+
+.footerText button a:hover{
+    color: var(--color2);
+    border-color: var(--color4);
+}
 
 .socialBtn 
 {
@@ -298,8 +372,8 @@ footer{
 .socialBtn a
 {
     text-decoration: none;
-    color: white;
-    font-size: 24px;
+    color: var(--color1);
+    font-size: var(--subtitle);
     width: 50px;
     height: 50px;
     display: flex;
@@ -307,3 +381,7 @@ footer{
     justify-content: center;
 }
 
+.socialBtn a:hover
+{
+    color: var(--color2);
+}
