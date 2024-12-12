@@ -4,6 +4,9 @@
       --subtitle: 25pt;
       --textSize: 19pt;
 
+      --titleMovile: 50pt;
+      --subtitleMovile: 20pt;
+
       /* Variables color */
       --color1: white;
       --color2: #f7e9fc;
@@ -49,7 +52,7 @@ header{
 
 header div{
     display: flex;
-    justify-content: start;
+    justify-content:start;
     align-items: center;
     padding: 1rem;
 }
@@ -339,6 +342,7 @@ div .btnContact a:hover{
 /*MEDIA QUERY*/
 @media screen and (max-width: 580px) {
 
+    /* MENU */
    #logo{
     padding: 1% 2%;
     display: flex;
@@ -349,15 +353,10 @@ div .btnContact a:hover{
     left: 20px; */
     
    }
-   /* .separation{
-    padding-bottom: 10%;
-   } */
-
+   
    #logo a{
     font-size: 17px;
    }
-
-
 
    #menu .menu-flex{
     display: block;
@@ -370,8 +369,6 @@ div .btnContact a:hover{
         max-height: 0px;
         overflow: hidden;
         transition: 0.35s;
-        /* padding-right: 30%; */
-
    }
 
    .menu-flex  li{
@@ -391,15 +388,77 @@ div .btnContact a:hover{
 
    .btnCloseMenu i{
         font-size: 5vw;
-  }
+    }
 
   #menuToggle:checked ~ .menu-flex
     {
         max-height: 350px;
-       
     }
 
+    /* MAIN */
 
+    h1{
+        font-size: var(--titleMovile);
+    }
 
+    .container .main_img{
+       width: 100vw;
+    
+    }
 
+    .news-main{
+        flex-direction: column;
+       align-content:center;
+       justify-content: flex-start;
+    }
+
+    .news-main .separation{
+      padding: 4%;
+    }
+
+    .news-main #card{
+        width: 70%;
+        padding-left: 2pt;
+        padding-right: 2pt;
+    }
+
+    /* Footer */
+
+    footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footerText{
+        width: 100%;
+        padding-right: 3%;
+        padding-left: 3%;
+        text-align: center;
+    }
+    .footerText p{
+        padding-bottom: 5%;
+    }
+
+    .footerText .btnContact{
+        padding-left: 40%;
+    }
+
+    .socialArea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .socialArea p{
+        padding-top: 3%;
+        /* text-align: center; */
+    }
+
+    .socialBtn{
+        padding-right: 0;
+    }
+
+        
 }
