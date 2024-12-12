@@ -341,25 +341,46 @@ div .btnContact a:hover{
 
    #logo{
     padding: 1% 2%;
+    display: flex;
+    align-self: flex-start;
+    /* display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px; */
     
    }
+   /* .separation{
+    padding-bottom: 10%;
+   } */
 
    #logo a{
     font-size: 17px;
    }
 
+
+
    #menu .menu-flex{
     display: block;
+    padding-top: 30%;
    }
 
    .menu-flex {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        vertical-align: middle;
         max-height: 0px;
         overflow: hidden;
         transition: 0.35s;
+        /* padding-right: 30%; */
+
    }
+
+   .menu-flex  li{
+        padding: 5% 0%;
+    }
+
+    .menu-flex  li a{
+        text-align: center;
+    }
 
    .btnCloseMenu{
      display: block;
@@ -375,7 +396,10 @@ div .btnContact a:hover{
   #menuToggle:checked ~ .menu-flex
     {
         max-height: 350px;
+       
     }
+
+
 
 
 }
