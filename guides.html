@@ -13,10 +13,13 @@
                 <a href="index.html">GAME WORLD</a>
         </div>
         <nav id="menu">
+            
+            <input type="checkbox" id="menuToggle">
+                    <label for="menuToggle" class="btnCloseMenu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
             <ul class="menu-flex">
-                <li id="btnCloseMenu">
-                    <i class="fa-solid fa-bars"></i>
-                </li> 
                 <li>
                     <a href="news.html">Noticias</a>
                 </li>
@@ -27,9 +30,9 @@
                     <a href="contact.html">Contáctanos</a>
                 </li>
             </ul>
-            <div id="btnOpenMenu">
+            <!-- <div id="btnOpenMenu">
                 <i class="fa-solid fa-xmark"></i>
-            </div>
+            </div> -->
         </nav>
     </header>
     
@@ -248,15 +251,17 @@
     </main>
 
     <footer>
+        
         <div class="footerText">
             <p>Si tienes alguna pregunta, consulta o sugerencia, ¡no dudes en contactar con nosotros! Pincha en el botón de CONTACTO y rellena el formulario para hacernos llegar tu mensaje.</p>
 
-            <button>
-                <a href="contact.html"> Contacto </a>  
-            </button>
+            <div class="btnContact">
+                <a href="contact.html"> Contacto </a> 
+            </div> 
+
         </div>
-        <div >
-            <p>Para más información, ¡Siguenos en nuestras Redes Sociales!</p>
+        <div class="socialArea">
+            <p >Para más información, ¡Siguenos en nuestras Redes Sociales!</p>
             <ul class="socialBtn">
                 <li>
                     <a href="https://www.instagram.com/" target="_blank">
