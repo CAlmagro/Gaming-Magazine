@@ -200,6 +200,7 @@ img {
     height: auto;
     vertical-align: middle;
     border-radius: 20px;
+    box-shadow: 10px 10px var(--color2);
 }
 
 /* Slideshow container */
