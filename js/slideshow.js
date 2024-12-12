@@ -1,4 +1,4 @@
-console.log("tengo hambre ajhfbaqgbahbgabga");
+
 /**
  * Funciones en el script slideshow.js
  * 
@@ -28,7 +28,7 @@ let prevSlideArrow = document.querySelector(".prev");
 for (j=0; j<dots.length; j++) {
     dots[j].addEventListener("click", function(){
         stopAutoSlide();
-        currentSlide();
+        showSlide();
         startAutoSlide();
     })
 }
@@ -90,12 +90,12 @@ function showSlide(slideNumber){
         slides[i].style.display = "none";
     }
 
-    //Otro buble for para recorrer el array de dots, podría ir en el de arriba!
+    //Otro bucle for para recorrer el array de dots, podría ir en el de arriba!
     for(j=0; j<dots.length; j++){
         dots[j].className = dots[j].className.replace(" active","");
     }
 
-    //Accedemos al índice del array de slides o dots para esto tenemos que restyar -1 al slideIndex
+    //Accedemos al índice del array de slides o dots para esto tenemos que restar -1 al slideIndex
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
