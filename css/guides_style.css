@@ -146,9 +146,14 @@ nav .menu-flex .fa-xmark:hover{
     justify-content: center;
 }
 
-h1{
+.title-guide{
     display: flex;
     justify-content: center;
+}
+
+h1{
+    display: flex;
+    text-align: center;
     padding: 1rem;
     font-size: var(--title);
     font-family: Dongle-Bold;
@@ -388,27 +393,35 @@ p{
 
 /* Footer */
 
+/* Footer */
+
 footer{
     padding-top: 10vh;
     padding-bottom: 10vh;
     color: var(--color1);
     background-color: var(--color9);
     bottom: 0;
-
+  
     display: flex;
     justify-content: center;
-    align-items: center;   
-}
-
-.footerText{
+    align-items: first baseline;
+  }
+  
+  .footerText{
     width: 80%;
-    padding-right: 410px;
-    padding-left: 40px;
+    padding-right: 10%;
+    padding-left: 3%;
     display: flex;
     flex-wrap: wrap;  
-}
-
-.footerText .btnContact{
+    justify-content: center;
+   
+  }
+  
+  .footerText p{
+    padding-bottom: 5%;
+  }
+  
+  .footerText .btnContact{
    display: flex;
    justify-content: center;
    align-items:center;
@@ -421,35 +434,37 @@ footer{
    border-width: 5px;
    background-color: var(--color2);
    transition: 0.33s;
-}
-
-.footerText .btnContact:hover{
+  }
+  
+  .footerText .btnContact:hover{
     background-color: var(--color1);
-
-}
-
-.footerText .btnContact a{
+  
+  }
+  
+  .footerText .btnContact a{
     color: var(--color3);
     text-decoration: none;
     transition: 0.33s;
-}
-
-.footerText .btnContact a:hover{
+  }
+  
+  .footerText .btnContact a:hover{
     color: var(--color2);
     border-color: var(--color4);
-}
-
-.socialBtn 
-{
+  }
+  
+  
+  .socialBtn 
+  {
+    padding-top: 10%;
     padding-right: 100px;
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 3vw;
-}
-
-.socialBtn a
-{
+  }
+  
+  .socialBtn a
+  {
     text-decoration: none;
     color: var(--color1);
     font-size: var(--subtitle);
@@ -458,14 +473,69 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.socialBtn a:hover
-{
+  }
+  
+  .socialBtn a:hover
+  {
     color: var(--color2);
-}
+  }
+  
 
 /*MEDIA QUERY*/
+
+/* TABLET */
+@media only screen and (max-width: 1030px){
+
+
+    /* Footer */
+
+    footer{
+        align-items: first baseline;
+
+    }
+
+    .footerText{
+        width: 80%;
+        padding-right: 10%;
+        padding-left: 3%;
+        text-align:start;
+        
+    }
+    .footerText p{
+        padding-bottom: 5%;
+    }
+
+
+    .footerText .btnContact{
+        /* padding-left: 40%; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .socialArea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-right: 3%;
+    }
+
+    .socialArea p{
+        padding-top: 3%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-left: 3%;
+    }
+
+    .socialBtn{
+        padding-right: 0;
+        padding-top: 15%;
+    }
+}
+
+/* MOVIL */
 @media screen and (max-width: 580px) {
 
     /* MENU */

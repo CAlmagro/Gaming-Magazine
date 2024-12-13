@@ -147,7 +147,7 @@ nav .menu-flex .fa-xmark:hover{
 
 h1{
   display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 1rem;
   font-size: var(--title);
   font-family: Dongle-Bold;
@@ -250,15 +250,21 @@ footer{
 
   display: flex;
   justify-content: center;
-  align-items: center;   
+  align-items: first baseline;
 }
 
 .footerText{
   width: 80%;
-  padding-right: 410px;
-  padding-left: 40px;
+  padding-right: 10%;
+  padding-left: 3%;
   display: flex;
   flex-wrap: wrap;  
+  justify-content: center;
+ 
+}
+
+.footerText p{
+  padding-bottom: 5%;
 }
 
 .footerText .btnContact{
@@ -292,8 +298,10 @@ footer{
   border-color: var(--color4);
 }
 
+
 .socialBtn 
 {
+  padding-top: 10%;
   padding-right: 100px;
   display: flex;
   flex-direction: row;
@@ -318,7 +326,61 @@ footer{
   color: var(--color2);
 }
 
+
 /*MEDIA QUERY*/
+
+/* TABLET */
+@media only screen and (max-width: 1030px){ 
+
+  /* Footer */
+
+  footer{
+      align-items: first baseline;
+
+  }
+
+  .footerText{
+      width: 80%;
+      padding-right: 10%;
+      padding-left: 3%;
+      text-align:start;
+      
+  }
+  .footerText p{
+      padding-bottom: 5%;
+  }
+
+
+  .footerText .btnContact{
+      /* padding-left: 40%; */
+      display: flex;
+      justify-content: center;
+  }
+
+  .socialArea {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-right: 3%;
+  }
+
+  .socialArea p{
+      padding-top: 3%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      padding-left: 3%;
+  }
+
+  .socialBtn{
+      padding-right: 0;
+      padding-top: 15%;
+  }
+}
+
+/* MOVIL */
 @media screen and (max-width: 580px) {
 
   /* MENU */
