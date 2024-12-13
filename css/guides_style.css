@@ -4,6 +4,9 @@
     --subtitle: 25pt;
     --textSize: 19pt;
 
+    --titleMovile: 50pt;
+    --subtitleMovile: 20pt;
+
     /* Variables color */
     --color1: white;
     --color2: #f7e9fc;
@@ -378,15 +381,9 @@ p{
     vertical-align: bottom;
 }
 
-
-
 .GI-guide-E .teams a{
     text-decoration: none;
 }
-
-
-
-
 
 
 /* Footer */
@@ -411,7 +408,7 @@ footer{
     flex-wrap: wrap;  
 }
 
-.footerText button{
+.footerText .btnContact{
    display: flex;
    justify-content: center;
    align-items:center;
@@ -426,18 +423,18 @@ footer{
    transition: 0.33s;
 }
 
-.footerText button:hover{
+.footerText .btnContact:hover{
     background-color: var(--color1);
 
 }
 
-.footerText button a{
+.footerText .btnContact a{
     color: var(--color3);
     text-decoration: none;
     transition: 0.33s;
 }
 
-.footerText button a:hover{
+.footerText .btnContact a:hover{
     color: var(--color2);
     border-color: var(--color4);
 }
@@ -528,6 +525,39 @@ footer{
 
     h1{
         font-size: var(--titleMovile);
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .GI-guide-M p{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .GI-guide-E .teams ul, .GI-guide-A .artifacts ul{
+        margin-right: 0px;
+    }
+
+    .GI-guide-M #mision-list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content:space-between;
+    }
+
+    .GI-guide-M #mision-list li{
+        padding-top: 10%;
+        padding-left: 0%;
+    }
+
+    .GI-guide-M #mision-list li a{
+        text-align: center;
+    }
+
+    p{
+        text-align: justify;
     }
 
     /* Footer */
@@ -542,13 +572,18 @@ footer{
         padding-right: 3%;
         padding-left: 3%;
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
     .footerText p{
         padding-bottom: 5%;
     }
 
+
     .footerText .btnContact{
-        padding-left: 40%;
+        /* padding-left: 40%; */
+        display: flex;
+        justify-content: center;
     }
 
     .socialArea {
@@ -561,7 +596,11 @@ footer{
 
     .socialArea p{
         padding-top: 3%;
-        /* text-align: center; */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-right: 3%;
+        padding-left: 3%;
     }
 
     .socialBtn{

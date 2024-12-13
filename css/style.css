@@ -397,19 +397,23 @@ div .btnContact a:hover{
 
     /* MAIN */
 
-    h1{
+    h1,h2{
         font-size: var(--titleMovile);
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
     .container .main_img{
        width: 100vw;
-    
     }
 
     .news-main{
         flex-direction: column;
        align-content:center;
        justify-content: flex-start;
+       padding: 0px;
     }
 
     .news-main .separation{
@@ -434,13 +438,18 @@ div .btnContact a:hover{
         padding-right: 3%;
         padding-left: 3%;
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
     .footerText p{
         padding-bottom: 5%;
     }
 
+
     .footerText .btnContact{
-        padding-left: 40%;
+        /* padding-left: 40%; */
+        display: flex;
+        justify-content: center;
     }
 
     .socialArea {
@@ -453,7 +462,11 @@ div .btnContact a:hover{
 
     .socialArea p{
         padding-top: 3%;
-        /* text-align: center; */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-right: 3%;
+        padding-left: 3%;
     }
 
     .socialBtn{
