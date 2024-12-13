@@ -159,77 +159,76 @@ p{
 }
 
 .form-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 5% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 10%;
 }
 
 /* FORMULARIO */
 .contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20%;
 }
 
 .form
 {
-    max-width: 420px;
-    margin:20px 30px;
+  max-width: 420px;
+  margin:20px 30px;
 }
 
 .form-input
 {
-    padding: 13px;
+  padding: 13px;
 
-    color: var(--color4);
-    font-family: Nunito;
-    font-weight: 500;
-    font-size: 18px;
+  color: var(--color4);
+  font-family: Nunito;
+  font-weight: 500;
+  font-size: 18px;
 
-    border-radius: 5px;
-    line-height: 22px;
-    /* background-color: transparent; */
-    border: 5px solid var(--color7);
-    transition: all 0.3s;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 5px solid var(--color7);
+  transition: all 0.3s;
     
-    margin-bottom: 15px;
-    width: 100%;
-    box-sizing: border-box;
-    outline: 0;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
 }
 
 .form-input:focus
 {
-    border:  5px solid var(--color7);
+  border:  5px solid var(--color7);
 }
 
 .form-input textarea
 {
-    height: 150px;
-    line-height: 150%;
-    resize: vertical;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
 }
 
 [type="submit"]
 {
-    text-decoration: none;
-    display: block;
-    font-family: Dongle-Bold;
-    font-size: var(--subtitle);
-    cursor: pointer;
+  text-decoration: none;
+  display: block;
+  font-family: Dongle-Bold;
+  font-size: var(--subtitle);
+  cursor: pointer;
 
-    background-color: var(--color7);
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 5px solid var(--color8);
-    color: var(--color1);
-    text-decoration: none;
-    transition: 0.33s;
+  background-color: var(--color7);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 5px solid var(--color8);
+  color: var(--color1);
+  text-decoration: none;
+  transition: 0.33s;
 
-    width: 100%;
+  width: 100%;
 }
 
 [type="submit"]:hover{
@@ -335,48 +334,47 @@ footer{
   /* Footer */
 
   footer{
-      align-items: first baseline;
+    align-items: first baseline;
 
   }
 
   .footerText{
-      width: 80%;
-      padding-right: 10%;
-      padding-left: 3%;
-      text-align:start;
+    width: 80%;
+    padding-right: 10%;
+    padding-left: 3%;
+    text-align:start;
       
   }
   .footerText p{
-      padding-bottom: 5%;
+    padding-bottom: 5%;
   }
 
 
   .footerText .btnContact{
-      /* padding-left: 40%; */
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 
   .socialArea {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      flex-direction: column;
-      padding-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-right: 3%;
   }
 
   .socialArea p{
-      padding-top: 3%;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      padding-left: 3%;
+    padding-top: 3%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 3%;
   }
 
   .socialBtn{
-      padding-right: 0;
-      padding-top: 15%;
+    padding-right: 0;
+    padding-top: 15%;
   }
 }
 
@@ -385,39 +383,34 @@ footer{
 
   /* MENU */
  #logo{
-  padding: 1% 2%;
-  display: flex;
-  align-self: flex-start;
-  /* display: block;
-  position: absolute;
-  top: 20px;
-  left: 20px; */
-  
+    padding: 1% 2%;
+    display: flex;
+    align-self: flex-start;
  }
  
  #logo a{
-  font-size: 17px;
+    font-size: 17px;
  }
 
  #menu .menu-flex{
-  display: block;
-  padding-top: 30%;
+    display: block;
+    padding-top: 30%;
  }
 
  .menu-flex {
-      flex-direction: column;
-      vertical-align: middle;
-      max-height: 0px;
-      overflow: hidden;
-      transition: 0.35s;
+    flex-direction: column;
+    vertical-align: middle;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.35s;
  }
 
  .menu-flex  li{
-      padding: 5% 0%;
+   padding: 5% 0%;
   }
 
   .menu-flex  li a{
-      text-align: center;
+    text-align: center;
   }
 
  .btnCloseMenu{
@@ -425,15 +418,15 @@ footer{
    position: absolute;
    top: 20px;
    right: 20px;
- }
+  }
 
  .btnCloseMenu i{
-      font-size: 5vw;
+    font-size: 5vw;
   }
 
 #menuToggle:checked ~ .menu-flex
   {
-      max-height: 350px;
+    max-height: 350px;
   }
 
   /* MAIN */
@@ -450,8 +443,6 @@ footer{
     text-align: center;
   }
 
-
-
   /* Footer */
 
   footer{
@@ -460,44 +451,42 @@ footer{
 }
 
 .footerText{
-    width: 100%;
-    padding-right: 3%;
-    padding-left: 3%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  padding-right: 3%;
+  padding-left: 3%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .footerText p{
-    padding-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 
 .footerText .btnContact{
-    /* padding-left: 40%; */
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .socialArea {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .socialArea p{
-    padding-top: 3%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding-right: 3%;
-    padding-left: 3%;
+  padding-top: 3%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-right: 3%;
+  padding-left: 3%;
 }
 
 .socialBtn{
     padding-right: 0;
 }
-  
-      
+    
 }

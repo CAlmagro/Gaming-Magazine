@@ -116,6 +116,7 @@ nav .menu-flex a:hover{
 .btnOpenMenu, nav .menu-flex .fa-xmark{
     display: none;
 }
+
 .btnCloseMenu{
     color: var(--color4);
     background-color: var(--color2);
@@ -244,7 +245,6 @@ p{
     background-color: var(--color6);
 }
 
-
 /* guias builds */
 
 .GI-guide-B {
@@ -360,8 +360,7 @@ p{
     padding: 2% 10%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .GI-guide-E .teams ul{
@@ -379,6 +378,7 @@ p{
     height: 10vh;
     position: relative;
 }
+
 .GI-guide-E .teams img{
     max-height: 100%;
     min-width: 100%;
@@ -389,9 +389,6 @@ p{
 .GI-guide-E .teams a{
     text-decoration: none;
 }
-
-
-/* Footer */
 
 /* Footer */
 
@@ -405,9 +402,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: first baseline;
-  }
+}
   
-  .footerText{
+.footerText{
     width: 80%;
     padding-right: 10%;
     padding-left: 3%;
@@ -415,13 +412,13 @@ footer{
     flex-wrap: wrap;  
     justify-content: center;
    
-  }
+}
   
-  .footerText p{
+.footerText p{
     padding-bottom: 5%;
-  }
+}
   
-  .footerText .btnContact{
+.footerText .btnContact{
    display: flex;
    justify-content: center;
    align-items:center;
@@ -434,37 +431,36 @@ footer{
    border-width: 5px;
    background-color: var(--color2);
    transition: 0.33s;
-  }
+}
   
-  .footerText .btnContact:hover{
+.footerText .btnContact:hover{
     background-color: var(--color1);
+}
   
-  }
-  
-  .footerText .btnContact a{
+.footerText .btnContact a{
     color: var(--color3);
     text-decoration: none;
     transition: 0.33s;
-  }
+}
   
-  .footerText .btnContact a:hover{
+.footerText .btnContact a:hover{
     color: var(--color2);
     border-color: var(--color4);
-  }
+}
   
   
-  .socialBtn 
-  {
+.socialBtn 
+{
     padding-top: 10%;
     padding-right: 100px;
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 3vw;
-  }
+}
   
-  .socialBtn a
-  {
+.socialBtn a
+{
     text-decoration: none;
     color: var(--color1);
     font-size: var(--subtitle);
@@ -473,25 +469,22 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .socialBtn a:hover
-  {
+.socialBtn a:hover
+{
     color: var(--color2);
-  }
+}
   
 
 /*MEDIA QUERY*/
 
 /* TABLET */
 @media only screen and (max-width: 1030px){
-
-
+    
     /* Footer */
-
     footer{
         align-items: first baseline;
-
     }
 
     .footerText{
@@ -499,15 +492,13 @@ footer{
         padding-right: 10%;
         padding-left: 3%;
         text-align:start;
-        
     }
+
     .footerText p{
         padding-bottom: 5%;
     }
 
-
     .footerText .btnContact{
-        /* padding-left: 40%; */
         display: flex;
         justify-content: center;
     }
@@ -543,11 +534,6 @@ footer{
     padding: 1% 2%;
     display: flex;
     align-self: flex-start;
-    /* display: block;
-    position: absolute;
-    top: 20px;
-    left: 20px; */
-    
    }
    
    #logo a{
@@ -586,13 +572,11 @@ footer{
         font-size: 5vw;
     }
 
-  #menuToggle:checked ~ .menu-flex
-    {
+  #menuToggle:checked ~ .menu-flex{
         max-height: 350px;
     }
 
     /* MAIN */
-
     h1{
         font-size: var(--titleMovile);
         padding: 0px;
@@ -651,7 +635,6 @@ footer{
 
 
     .footerText .btnContact{
-        /* padding-left: 40%; */
         display: flex;
         justify-content: center;
     }
