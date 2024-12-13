@@ -5,7 +5,7 @@
     --textSize: 19pt;
 
     --titleMovile: 50pt;
-      --subtitleMovile: 20pt;
+    --subtitleMovile: 20pt;
 
 
     /* Variables color */
@@ -31,14 +31,12 @@
   src: url(../media/Fonts/Nunito.ttf);
 }
 
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 
 /* menu */
 header{
@@ -136,6 +134,7 @@ nav .menu-flex .fa-xmark:hover{
 .btnOpenMenu .fa-bars, nav .fa-xmark{
     cursor: pointer;
 }
+
 /* Main */
 .divisor{
     background-color: var(--color4);
@@ -296,7 +295,6 @@ img {
 
 /* The dots/bullets/indicators */
 .dot {
-    cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -306,8 +304,7 @@ img {
     transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
+.active{
     background-color: var(--color4);
 }
 
@@ -326,9 +323,6 @@ img {
     }
 }
 
-
-/* Footer */
-
 /* Footer */
 
 footer{
@@ -341,23 +335,22 @@ footer{
     display: flex;
     justify-content: center;
     align-items: first baseline;
-  }
+}
   
-  .footerText{
+.footerText{
     width: 80%;
     padding-right: 10%;
     padding-left: 3%;
     display: flex;
     flex-wrap: wrap;  
     justify-content: center;
-   
-  }
+}
   
-  .footerText p{
+.footerText p{
     padding-bottom: 5%;
-  }
+}
   
-  .footerText .btnContact{
+.footerText .btnContact{
    display: flex;
    justify-content: center;
    align-items:center;
@@ -370,37 +363,33 @@ footer{
    border-width: 5px;
    background-color: var(--color2);
    transition: 0.33s;
-  }
+}
   
-  .footerText .btnContact:hover{
+.footerText .btnContact:hover{
     background-color: var(--color1);
+}
   
-  }
-  
-  .footerText .btnContact a{
+.footerText .btnContact a{
     color: var(--color3);
     text-decoration: none;
     transition: 0.33s;
-  }
+}
   
-  .footerText .btnContact a:hover{
+.footerText .btnContact a:hover{
     color: var(--color2);
     border-color: var(--color4);
-  }
-  
-  
-  .socialBtn 
-  {
+}
+   
+.socialBtn{
     padding-top: 10%;
     padding-right: 100px;
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 3vw;
-  }
+}
   
-  .socialBtn a
-  {
+.socialBtn a{
     text-decoration: none;
     color: var(--color1);
     font-size: var(--subtitle);
@@ -409,13 +398,11 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .socialBtn a:hover
-  {
+.socialBtn a:hover{
     color: var(--color2);
-  }
-  
+}
 
 /*MEDIA QUERY*/
 
@@ -469,7 +456,6 @@ footer{
 
 
     .footerText .btnContact{
-        /* padding-left: 40%; */
         display: flex;
         justify-content: center;
     }
@@ -505,11 +491,6 @@ footer{
     padding: 1% 2%;
     display: flex;
     align-self: flex-start;
-    /* display: block;
-    position: absolute;
-    top: 20px;
-    left: 20px; */
-    
    }
    
    #logo a{
@@ -548,8 +529,7 @@ footer{
         font-size: 5vw;
     }
 
-  #menuToggle:checked ~ .menu-flex
-    {
+  #menuToggle:checked ~ .menu-flex{
         max-height: 350px;
     }
 
@@ -585,9 +565,7 @@ footer{
     .new-1 .new-1T p, .new-2 .new-2T p, .new-3 .new-3T p{
         text-align: justify;
     }
-
    
-
     /* Footer */
 
    footer{
@@ -607,9 +585,7 @@ footer{
         padding-bottom: 5%;
     }
 
-
     .footerText .btnContact{
-        /* padding-left: 40%; */
         display: flex;
         justify-content: center;
     }
@@ -633,7 +609,5 @@ footer{
 
     .socialBtn{
         padding-right: 0;
-    }
-
-        
+    }     
 }

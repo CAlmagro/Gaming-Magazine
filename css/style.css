@@ -30,7 +30,6 @@
     src: url(../media/Fonts/Nunito.ttf);
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -175,7 +174,6 @@ h3{
     justify-content: space-evenly;
 }
 
-
 .news-main{
     display:flex;
     align-items: center;
@@ -237,7 +235,6 @@ h3{
     padding: 0px 0px 20px 0px;  
 }
 
-
 .news-main #card img{
     display:flex;
     width: 75%;
@@ -265,7 +262,6 @@ h3{
     justify-content: center;
 }
 
-/* ----------- FOOTER -------------- */
 /* Footer */
 
 footer{
@@ -278,9 +274,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: first baseline;
-  }
+}
   
-  .footerText{
+.footerText{
     width: 80%;
     padding-right: 10%;
     padding-left: 3%;
@@ -288,13 +284,13 @@ footer{
     flex-wrap: wrap;  
     justify-content: center;
    
-  }
+}
   
-  .footerText p{
+.footerText p{
     padding-bottom: 5%;
-  }
+}
   
-  .footerText .btnContact{
+.footerText .btnContact{
    display: flex;
    justify-content: center;
    align-items:center;
@@ -307,37 +303,34 @@ footer{
    border-width: 5px;
    background-color: var(--color2);
    transition: 0.33s;
-  }
+}
   
-  .footerText .btnContact:hover{
+.footerText .btnContact:hover{
     background-color: var(--color1);
+}
   
-  }
-  
-  .footerText .btnContact a{
+.footerText .btnContact a{
     color: var(--color3);
     text-decoration: none;
     transition: 0.33s;
-  }
+}
   
-  .footerText .btnContact a:hover{
+.footerText .btnContact a:hover{
     color: var(--color2);
     border-color: var(--color4);
-  }
+}
   
   
-  .socialBtn 
-  {
+.socialBtn {
     padding-top: 10%;
     padding-right: 100px;
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 3vw;
-  }
+}
   
-  .socialBtn a
-  {
+.socialBtn a{
     text-decoration: none;
     color: var(--color1);
     font-size: var(--subtitle);
@@ -346,15 +339,15 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .socialBtn a:hover
-  {
+.socialBtn a:hover{
     color: var(--color2);
-  }
+}
   
 
 /*MEDIA QUERY*/
+/* Tablet */
 @media screen and (max-width: 1030px){
     /* MAIN */
     h1,h2{
@@ -396,27 +389,22 @@ footer{
         font-size: var(--subtitle);
     }
 
-
     /* Footer */
     footer{
         align-items: first baseline;
-
     }
 
     .footerText{
         width: 80%;
         padding-right: 10%;
         padding-left: 3%;
-        text-align:start;
-        
+        text-align:start;   
     }
     .footerText p{
         padding-bottom: 5%;
     }
 
-
     .footerText .btnContact{
-        /* padding-left: 40%; */
         display: flex;
         justify-content: center;
     }
@@ -440,33 +428,26 @@ footer{
 
     .socialBtn{
         padding-right: 0;
-        padding-top: 15%;
-        
+        padding-top: 15%;    
     }  
-
 }
 
 @media screen and (max-width: 580px) {
 
     /* MENU */
    #logo{
-    padding: 1% 2%;
-    display: flex;
-    align-self: flex-start;
-    /* display: block;
-    position: absolute;
-    top: 20px;
-    left: 20px; */
-    
+        padding: 1% 2%;
+        display: flex;
+        align-self: flex-start; 
    }
    
    #logo a{
-    font-size: 17px;
+        font-size: 17px;
    }
 
    #menu .menu-flex{
-    display: block;
-    padding-top: 30%;
+        display: block;
+        padding-top: 30%;
    }
 
    .menu-flex {
@@ -486,18 +467,17 @@ footer{
     }
 
    .btnCloseMenu{
-     display: block;
-     position: absolute;
-     top: 20px;
-     right: 20px;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
    }
 
    .btnCloseMenu i{
         font-size: 5vw;
     }
 
-  #menuToggle:checked ~ .menu-flex
-    {
+  #menuToggle:checked ~ .menu-flex{
         max-height: 350px;
     }
 
@@ -547,13 +527,12 @@ footer{
         display: flex;
         justify-content: center;
     }
+
     .footerText p{
         padding-bottom: 5%;
     }
 
-
     .footerText .btnContact{
-        /* padding-left: 40%; */
         display: flex;
         justify-content: center;
     }
