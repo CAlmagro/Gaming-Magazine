@@ -285,31 +285,38 @@ footer{
     padding-left: 40px;
     display: flex;
     flex-wrap: wrap;  
+    justify-content: center;
 }
 
-div .btnContact a{
+.footerText .btnContact{
    display: flex;
    justify-content: center;
    align-items:center;
-   padding: 10px 20px;
-
+   width: 50%;
    font-family: Dongle-Bold;
    font-size: 30px;
-   color: var(--color4);
-   text-decoration: none;
-   cursor: pointer;
-
-   background-color: var(--color2);
    border-radius: 20px;
    border-color: var(--color4);
    border-style: solid;
    border-width: 5px;
+   background-color: var(--color2);
    transition: 0.33s;
 }
 
-div .btnContact a:hover{
+.footerText .btnContact:hover{
     background-color: var(--color1);
+
+}
+
+.footerText .btnContact a{
     color: var(--color3);
+    text-decoration: none;
+    transition: 0.33s;
+}
+
+.footerText .btnContact a:hover{
+    color: var(--color2);
+    border-color: var(--color4);
 }
 
 .socialBtn 
@@ -340,6 +347,97 @@ div .btnContact a:hover{
 
 
 /*MEDIA QUERY*/
+@media screen and (max-width: 1030px){
+    /* MAIN */
+    h1,h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h3{
+        font-size: var(--subtitle);
+    }
+
+    .container .main_img{
+       width: 80vw;
+    }
+
+    .news-main{
+        flex-direction: column;
+       align-content:center;
+       justify-content: flex-start;
+       padding: 0px;
+    }
+
+    .news-main .separation{
+      padding: 4%;
+    }
+
+    .news-main #card{
+        width: 70%;
+        padding-left: 2pt;
+        padding-right: 2pt;
+    }
+
+    .news-main #card #btnIraver{
+        width: 40vw;
+    }
+
+    .news-main #card #btnIraver a{
+        font-size: var(--subtitle);
+    }
+
+
+    /* Footer */
+    footer{
+        align-items: first baseline;
+
+    }
+
+    .footerText{
+        width: 80%;
+        padding-right: 10%;
+        padding-left: 3%;
+        text-align:start;
+        
+    }
+    .footerText p{
+        padding-bottom: 5%;
+    }
+
+
+    .footerText .btnContact{
+        /* padding-left: 40%; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .socialArea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-right: 3%;
+    }
+
+    .socialArea p{
+        padding-top: 3%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-left: 3%;
+    }
+
+    .socialBtn{
+        padding-right: 0;
+        padding-top: 15%;
+        
+    }  
+
+}
+
 @media screen and (max-width: 580px) {
 
     /* MENU */
@@ -471,7 +569,5 @@ div .btnContact a:hover{
 
     .socialBtn{
         padding-right: 0;
-    }
-
-        
+    }    
 }
